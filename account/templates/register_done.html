@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h4 class='display-4' style="font-size:1.6em;">Hello {{new_user.first_name}},you are registered with us ! </h4>
+<p style="font-size:1.3em;">Your registered email id is {{new_user.email}} to update click  <a href="{% url 'update_email' %}">here</a></p>
+<a href='{% url "login" %}' ><button type="button" name="button" class="btn btn-primary">Login</button></a>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Sign Up Below </h1>
+<div class="jumbotron">
+  {% for message in messages %}
+
+                      <div class="alert alert-warning">
+                          <a class="close" href="#" data-dismiss="alert">×</a>
+
+                          {{ message }}
+
+                      </div>
+              {% endfor %}
+<br/>
+{% if user.is_authenticated %}
+<h3>You are already logged in </h3>
+{% else %}
+<form action ='' class="form" method ="POST" style="padding-top:30px;">
+  {{user_form.as_p}}
+  {{user_addtnl_form.as_p}}
+  {% csrf_token %}
+
+<input type='submit' value ='register' id ="id_submit" name ='register'>
+</form>
+{% endif %}
+</div>
+<script>
+  document.getElementsByClassName('helptext')[0].textContent="Should be of minimum of 8 characters";
+
+</script>
+
+
+
+{% endblock %}
