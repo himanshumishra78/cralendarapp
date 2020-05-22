@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -133,4 +134,5 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 django_heroku.settings(locals())
