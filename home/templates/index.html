@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Welcome {{user.get_username}}</h1>
+{% for user in logged_users %}
+{{user.get_username}}
+{% endfor %}
+
+{% endblock %}
