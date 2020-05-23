@@ -134,5 +134,16 @@ STATIC_URL = '/static/'
 
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = 'home:index'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+
+
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_HOST_USER='hmnsh9888@gmail.com'
+EMAIL_HOST_PASSWORD="Himanshu9888698590@"
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 django_heroku.settings(locals())

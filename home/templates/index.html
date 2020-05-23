@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class=container>
+  <div class="jumbotron>"
 <h1>Welcome {{user.get_username}}</h1>
 {% for user in user_list %}
-{{user.get_username}}
-{% endfor %}
+<li> {{user.get_username}}<li><br>
 
+{% endfor %}
+</div>
+</div>
 {% endblock %}
