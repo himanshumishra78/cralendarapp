@@ -8,7 +8,7 @@ This Prject is hosted on single dynamo. <br />
 # Best_Principal_Design:-
 admin_root_work is by-default admin I change admin_root_work for security reason <br />
 Link:-https://avatarapp-hm.herokuapp.com/admin_root_work/          <br />
-Username:-himanshu45                                             <br />                                           
+Username:-himanshu45                                <br />                                           
 password:-himanshu9888698590                                           <br />
 After login we can see how many account are there who are sign in with us and also used for other security reason <br />
 # inportant_variable_used:-
